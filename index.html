@@ -2,11 +2,18 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernando de Oliveira Rena - Portfólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Fernando de Oliveira Rena - Desenvolvedor Web & Mobile especializado em soluções inovadoras e eficientes">
+    <meta name="keywords" content="desenvolvedor, web, mobile, portfolio, Fernando Rena, programação">
+    <title>Fernando de Oliveira Rena | Desenvolvedor Web & Mobile</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
 </head>
 <body>
     <nav class="navbar">
@@ -16,141 +23,334 @@
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre" data-text="Sobre">Sobre</a></li>
+                <li><a href="#experiencia" data-text="Experiência">Experiência</a></li>
+                <li><a href="#habilidades" data-text="Habilidades">Habilidades</a></li>
+                <li><a href="#projetos" data-text="Projetos">Projetos</a></li>
+                <li><a href="#contato" data-text="Contato">Contato</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="hero">
         <div class="hero-content">
-            <h1>Fernando de Oliveira Rena</h1>
-            <p>Desenvolvedor Web & Mobile</p>
-            <div class="code-effect">
-                <pre>while(alive) {
-    code();
-    learn();
-    create();
-    innovate();
+            <div class="hero-text">
+                <p class="intro-text">Olá, eu sou</p>
+                <h1>Fernando de Oliveira Rena</h1>
+                <h2 class="typewriter">Desenvolvedor <span class="accent">Web & Mobile</span></h2>
+                <p class="hero-description">Transformando ideias em código e criando experiências digitais impactantes.</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-primary">Entre em contato</a>
+                    <a href="#projetos" class="btn btn-secondary">Ver projetos</a>
+                </div>
+            </div>
+            <div class="code-effect hero-code">
+                <pre><span class="comment">// Minha missão como desenvolvedor</span>
+<span class="keyword">function</span> <span class="function">developer</span>() {
+    <span class="keyword">while</span>(<span class="variable">alive</span>) {
+        <span class="function">code</span>();
+        <span class="function">learn</span>();
+        <span class="function">create</span>();
+        <span class="function">innovate</span>();
+    }
 }</pre>
             </div>
             <div class="social-links">
-                <a href="https://github.com/seu-github" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/seu-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/FernandoOli17" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/fernando-oliveira-rena-1b4060304/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:fernandodeoliveirarena@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
 
     <section id="sobre" class="section">
         <div class="container">
-            <h2>Sobre Mim</h2>
-            <div class="code-effect">
-                <pre>class Developer {
-    constructor() {
-        this.name = "Fernando Rena";
-        this.passion = "Tecnologia";
-        this.focus = ["Web", "Mobile"];
-        this.motto = "Código limpo, vida feliz!";
+            <div class="section-header">
+                <h2><span class="section-number">01.</span> Sobre Mim</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá! Sou Fernando, um desenvolvedor apaixonado por criar soluções digitais que combinam <span class="highlight">funcionalidade</span> e <span class="highlight">experiência do usuário</span>.</p>
+                    <p>Minha jornada na programação começou com a curiosidade de entender como o mundo digital funciona — e rapidamente se transformou em uma paixão por desenvolver sistemas que resolvem problemas reais com eficiência.</p>
+                    <p>Atualmente, concentro meu trabalho em desenvolvimento <span class="highlight">web</span> e <span class="highlight">mobile</span>, com foco em tecnologias como PHP, MySQL, Laravel, Flutter, Kotlin e Swift.</p>
+                    <p>Estou sempre em busca de aprender novas ferramentas e aprimorar minhas habilidades técnicas e criativas.</p>
+                </div>
+                <div class="code-effect about-code">
+                    <pre><span class="keyword">class</span> <span class="function">Developer</span> {
+    <span class="function">constructor</span>() {
+        <span class="property">this</span>.<span class="variable">name</span> = <span class="string">"Fernando Rena"</span>;
+        <span class="property">this</span>.<span class="variable">passion</span> = <span class="string">"Tecnologia"</span>;
+        <span class="property">this</span>.<span class="variable">focus</span> = [<span class="string">"Web"</span>, <span class="string">"Mobile"</span>];
+        <span class="property">this</span>.<span class="variable">motto</span> = <span class="string">"Código limpo, vida feliz!"</span>;
     }
 
-    code() {
-        return "Soluções inovadoras";
+    <span class="function">code</span>() {
+        <span class="keyword">return</span> <span class="string">"Soluções inovadoras"</span>;
     }
 }</pre>
+                </div>
             </div>
-            <p>Profissional apaixonado por tecnologia, com foco em desenvolvimento web e mobile. Busco oportunidades para aplicar meus conhecimentos em programação e banco de dados, contribuindo com soluções eficientes e escaláveis.</p>
         </div>
     </section>
 
     <section id="experiencia" class="section">
         <div class="container">
-            <h2>Experiência Profissional</h2>
-            <div class="experience-card">
-                <h3>Desenvolvedor de Automação</h3>
-                <h4>Granvilla Acabamentos (Remoto)</h4>
-                <p class="period">Mai/2025 – Atual</p>
-                <div class="code-effect">
-                    <pre>// Automação de Processos
-const automation = {
-    bots: 4,
-    impact: "20h/semana",
-    type: "automação",
-    features: [
-        "scraping",
-        "organização",
-        "padronização"
+            <div class="section-header">
+                <h2><span class="section-number">02.</span> Experiência Profissional</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-card">
+                        <div class="card-header">
+                            <h3>Desenvolvedor de Automação</h3>
+                            <span class="company">Granvilla Acabamentos</span>
+                            <span class="period">Mai/2025 – Atual</span>
+                        </div>
+                        <div class="code-effect">
+                            <pre><span class="comment">// Automação de Processos</span>
+<span class="keyword">const</span> <span class="variable">automation</span> = {
+    <span class="property">bots</span>: <span class="number">4</span>,
+    <span class="property">impact</span>: <span class="string">"20h/semana"</span>,
+    <span class="property">type</span>: <span class="string">"automação"</span>,
+    <span class="property">features</span>: [
+        <span class="string">"scraping"</span>,
+        <span class="string">"organização"</span>,
+        <span class="string">"padronização"</span>
     ]
 };</pre>
+                        </div>
+                        <ul class="experience-list">
+                            <li>Idealizei e implementei um conjunto de 4 bots para automação de processos diários</li>
+                            <li>Desenvolvi solução de scraping para coleta e organização de dados</li>
+                            <li>Padronizei processos e garanti integridade das informações</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Selenium</span>
+                            <span>Automação</span>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li>Idealizei e implementei um conjunto de 4 bots para automação de processos diários</li>
-                    <li>Desenvolvi solução de scraping para coleta e organização de dados</li>
-                    <li>Padronizei processos e garanti integridade das informações</li>
-                </ul>
-            </div>
-            <div class="experience-card">
-                <h3>Estagiário em Desenvolvimento Web</h3>
-                <h4>Uillian Magela (Remoto)</h4>
-                <p class="period">Nov/2024 – Mar/2025</p>
-                <div class="code-effect">
-                    <pre>// Stack Tecnológica
-const techStack = {
-    frontend: ["HTML", "CSS", "JavaScript"],
-    backend: ["PHP", "MySQL"],
-    tools: ["Git", "Workbench"]
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-card">
+                        <div class="card-header">
+                            <h3>Estagiário em Desenvolvimento Web</h3>
+                            <span class="company">Uillian Magela</span>
+                            <span class="period">Nov/2024 – Mar/2025</span>
+                        </div>
+                        <div class="code-effect">
+                            <pre><span class="comment">// Stack Tecnológica</span>
+<span class="keyword">const</span> <span class="variable">techStack</span> = {
+    <span class="property">frontend</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JavaScript"</span>],
+    <span class="property">backend</span>: [<span class="string">"PHP"</span>, <span class="string">"MySQL"</span>],
+    <span class="property">tools</span>: [<span class="string">"Git"</span>, <span class="string">"Workbench"</span>]
 };</pre>
+                        </div>
+                        <ul class="experience-list">
+                            <li>Desenvolvimento de sistemas internos com PHP, HTML, CSS, JavaScript e MySQL</li>
+                            <li>Implementação de sistemas de Estoque e Compras</li>
+                            <li>Gerenciamento de dados via MySQL e Workbench</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li>Desenvolvimento de sistemas internos com PHP, HTML, CSS, JavaScript e MySQL</li>
-                    <li>Implementação de sistemas de Estoque e Compras</li>
-                    <li>Gerenciamento de dados via MySQL e Workbench</li>
-                </ul>
             </div>
         </div>
     </section>
 
     <section id="habilidades" class="section">
         <div class="container">
-            <h2>Habilidades Técnicas</h2>
+            <div class="section-header">
+                <h2><span class="section-number">03.</span> Habilidades Técnicas</h2>
+                <div class="section-line"></div>
+            </div>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>Desenvolvimento Web & Mobile</h3>
                     <div class="code-effect">
-                        <pre>const skills = {
-    frontend: ["HTML5", "CSS3", "JS"],
-    backend: ["PHP", "MySQL"],
-    mobile: ["Kotlin", "Swift", "Flutter"],
-    level: "Avançado"
+                        <pre><span class="keyword">const</span> <span class="variable">skills</span> = {
+    <span class="property">frontend</span>: [<span class="string">"HTML5"</span>, <span class="string">"CSS3"</span>, <span class="string">"JS"</span>],
+    <span class="property">backend</span>: [<span class="string">"PHP"</span>, <span class="string">"MySQL"</span>],
+    <span class="property">mobile</span>: [<span class="string">"Kotlin"</span>, <span class="string">"Swift"</span>, <span class="string">"Flutter"</span>],
+    <span class="property">level</span>: <span class="string">"Avançado"</span>
 };</pre>
                     </div>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                        <li>MySQL</li>
-                        <li>Kotlin</li>
-                        <li>Swift</li>
-                        <li>Dart/Flutter</li>
-                    </ul>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="HTML5">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h4>HTML5</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="CSS3">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>CSS3</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="PHP">
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <div class="skill-info">
+                                <h4>PHP</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="MySQL">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>MySQL</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Flutter">
+                            <div class="skill-icon"><i class="fab fa-flutter"></i></div>
+                            <div class="skill-info">
+                                <h4>Flutter</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="skill-category">
                     <h3>Outras Tecnologias</h3>
                     <div class="code-effect">
-                        <pre>const otherSkills = {
-    languages: ["C#", "Python"],
-    tools: ["Git", "Office"],
-    level: "Intermediário"
+                        <pre><span class="keyword">const</span> <span class="variable">otherSkills</span> = {
+    <span class="property">languages</span>: [<span class="string">"C#"</span>, <span class="string">"Python"</span>],
+    <span class="property">tools</span>: [<span class="string">"Git"</span>, <span class="string">"Office"</span>],
+    <span class="property">level</span>: <span class="string">"Intermediário"</span>
 };</pre>
                     </div>
-                    <ul>
-                        <li>C#</li>
-                        <li>Python</li>
-                        <li>Git</li>
-                        <li>Microsoft Office</li>
-                    </ul>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="C#">
+                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                            <div class="skill-info">
+                                <h4>C#</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Python">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Git">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>Git</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Office">
+                            <div class="skill-icon"><i class="fas fa-file-word"></i></div>
+                            <div class="skill-info">
+                                <h4>Microsoft Office</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="section-number">04.</span> Projetos</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Web</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <h3>Sistema de Gestão</h3>
+                        <p>Sistema completo para gerenciamento de estoque e vendas, desenvolvido com PHP e MySQL.</p>
+                        <a href="https://www.linkedin.com/posts/fernando-oliveira-rena-1b4060304_estagio-desenvolvimentoweb-cotemig-activity-7325287386005884928-7oJB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE2bJxgBguo1bUfPva003Y3t0XGVcslMNbE" target="_blank" class="btn btn-github">
+                            <i class="fab fa-linkedin"></i> Ver no linkedin
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Mobile</span>
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                        </div>
+                        <h3>App de Produtividade</h3>
+                        <p>Aplicativo mobile (Em Desenvolvimento)</p>
+                        <a href="https://github.com/seu-github/projeto2" target="_blank" class="btn btn-github">
+                            <i class="fab fa-github"></i> (Em Desenvolvimento)
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Automação</span>
+                            <span>Python</span>
+                            <span>Selenium</span>
+                        </div>
+                        <h3>Bot de Automação</h3>
+                        <p>Sistema automatizado para coleta e processamento de dados, otimizando processos repetitivos.</p>
+                        <a href="https://github.com/FernandoOli17/Bots-dowload" target="_blank" class="btn btn-github">
+                            <i class="fab fa-github"></i> Ver no GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,26 +358,62 @@ const techStack = {
 
     <section id="contato" class="section">
         <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-info">
-                <div class="code-effect">
-                    <pre>const contact = {
-    phone: "(31) 99905-3476",
-    email: "fernandodeoliveirarena@outlook.com",
-    location: "Belo Horizonte, MG"
+            <div class="section-header">
+                <h2><span class="section-number">05.</span> Contato</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-text">
+                    <p>Estou sempre aberto a novas oportunidades e desafios. Se você tem um projeto interessante ou apenas quer trocar uma ideia, entre em contato!</p>
+                    <div class="code-effect">
+                        <pre><span class="keyword">const</span> <span class="variable">contact</span> = {
+    <span class="property">phone</span>: <span class="string">"(31) 99905-3476"</span>,
+    <span class="property">email</span>: <span class="string">"fernandodeoliveirarena@outlook.com"</span>,
+    <span class="property">location</span>: <span class="string">"Belo Horizonte, MG"</span>
 };</pre>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>(31) 99905-3476</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>fernandodeoliveirarena@outlook.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Belo Horizonte, MG</p>
+                        </div>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="mailto:fernandodeoliveirarena@outlook.com" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Enviar Email
+                        </a>
+                        <a href="https://wa.me/5531999053476" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
                 </div>
-                <p><i class="fas fa-phone"></i> (31) 99905-3476</p>
-                <p><i class="fas fa-envelope"></i> fernandodeoliveirarena@outlook.com</p>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Fernando de Oliveira Rena. Todos os direitos reservados.</p>
-            <div class="code-effect">
-                <pre>// Código limpo, vida feliz!</pre>
+            <div class="footer-content">
+                <div class="footer-logo">&lt;Fernando Rena/&gt;</div>
+                <div class="footer-social">
+                    <a href="https://github.com/FernandoOli17" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/fernando-oliveira-rena-1b4060304/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:fernandodeoliveirarena@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fernando de Oliveira Rena. Todos os direitos reservados.</p>
+                <div class="code-effect">
+                    <pre><span class="comment">// Código limpo, vida feliz!</span></pre>
+                </div>
             </div>
         </div>
     </footer>
